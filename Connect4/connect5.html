@@ -1,0 +1,158 @@
+<html>
+<head>
+	<title>connect4</title>
+	<!-- Load my CSS -->
+		<link rel="stylesheet" type="text/css" href="connect5.css">
+
+
+		<script src="http://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+		<script type="text/javascript" src="connect5.js"></script>
+<!-- Load My JavaScript -->
+		
+		 
+
+</head>
+<body>
+
+<!-- <div id="bothplayers"> -->
+	
+	<!-- the area where the players type there names -->
+	<div id="input-container">
+			
+			<!-- the box where player 1 types his name -->
+			<input id="input-box1" type="text"></input>
+			
+			<!-- the button he uses to click and add his name -->
+			<button id="submit1">ADD</button>
+			
+				<!-- section for player 1's name -->
+			<div id="player1">
+				
+				<h3>PLAYER 1</h3>
+
+			</div>
+
+			
+			<input id="input-box2" type="text"></input>
+			
+			
+			<button id="submit2">ADD</button>
+			
+			<!-- section for player 1's name -->
+			<div id="player2">
+				
+				<h3>PLAYER 2</h3>
+
+			</div>
+	
+	</div>
+
+
+
+
+<!-- contains the game board -->
+<div id="container">
+
+
+		<div id="column1" class="columns">
+
+			<div class="empty" data-vertical="1" data-horizontal="1" data-diagonalup="1" data-diagonaldown="10"></div>
+			<div class="empty" data-vertical="1" data-horizontal="2" data-diagonalup="1" data-diagonaldown="9"></div>
+			<div class="empty" data-vertical="1" data-horizontal="3" data-diagonalup="1" data-diagonaldown="8"></div>
+			<div class="empty" data-vertical="1" data-horizontal="4" data-diagonalup="1" data-diagonaldown=""></div>
+			<div class="empty" data-vertical="1" data-horizontal="5" data-diagonalup="1" data-diagonaldown=""></div>
+			<div class="empty" data-vertical="1" data-horizontal="6" data-diagonalup="1" data-diagonaldown=""></div>
+
+		</div>
+
+
+
+		<div id="column2" class="columns">
+
+			<div class="empty" data-vertical="2" data-horizontal="1" data-diagonalup="1" data-diagonaldown="11"></div>
+			<div class="empty" data-vertical="2" data-horizontal="2" data-diagonalup="1" data-diagonaldown="10"></div>
+			<div class="empty" data-vertical="2" data-horizontal="3" data-diagonalup="1" data-diagonaldown="9"></div>
+			<div class="empty" data-vertical="2" data-horizontal="4" data-diagonalup="1" data-diagonaldown="8"></div>
+			<div class="empty" data-vertical="2" data-horizontal="5" data-diagonalup="1" data-diagonaldown=""></div>
+			<div class="empty" data-vertical="2" data-horizontal="6" data-diagonalup="1" data-diagonaldown=""></div>
+		</div>
+
+
+		<div id="column3" class="columns">
+
+			<div class="empty" data-vertical="3" data-horizontal="1" data-diagonalup="1" data-diagonaldown="12"></div>
+			<div class="empty" data-vertical="3" data-horizontal="2" data-diagonalup="1" data-diagonaldown="11"></div>
+			<div class="empty" data-vertical="3" data-horizontal="3" data-diagonalup="1" data-diagonaldown="10"></div>
+			<div class="empty" data-vertical="3" data-horizontal="4" data-diagonalup="1" data-diagonaldown="9"></div>
+			<div class="empty" data-vertical="3" data-horizontal="5" data-diagonalup="1" data-diagonaldown="8"></div>
+			<div class="empty" data-vertical="3" data-horizontal="6" data-diagonalup="1" data-diagonaldown=""></div>
+
+		</div>
+
+
+
+		<div id="column4" class="columns">
+
+			<div class="empty" data-vertical="4" data-horizontal="1" data-diagonalup="1" data-diagonaldown="13"></div>
+			<div class="empty" data-vertical="4" data-horizontal="2" data-diagonalup="1" data-diagonaldown="12"></div>
+			<div class="empty" data-vertical="4" data-horizontal="3" data-diagonalup="1" data-diagonaldown="11"></div>
+			<div class="empty" data-vertical="4" data-horizontal="4" data-diagonalup="1" data-diagonaldown="10"></div>
+			<div class="empty" data-vertical="4" data-horizontal="5" data-diagonalup="1" data-diagonaldown="9"></div>
+			<div class="empty" data-vertical="4" data-horizontal="6" data-diagonalup="1" data-diagonaldown="8"></div>
+
+		</div>
+
+
+
+		<div id="column5" class="columns">
+
+			<div class="empty" data-vertical="5" data-horizontal="1" data-diagonalup="1" data-diagonaldown=""></div>
+			<div class="empty" data-vertical="5" data-horizontal="2" data-diagonalup="1" data-diagonaldown="13"></div>
+			<div class="empty" data-vertical="5" data-horizontal="3" data-diagonalup="1" data-diagonaldown="12"></div>
+			<div class="empty" data-vertical="5" data-horizontal="4" data-diagonalup="1" data-diagonaldown="11"></div>
+			<div class="empty" data-vertical="5" data-horizontal="5" data-diagonalup="1" data-diagonaldown="10"></div>
+			<div class="empty" data-vertical="5" data-horizontal="6" data-diagonalup="1" data-diagonaldown="9"></div>
+
+		</div>
+
+
+
+		<div id="column6" class="columns">
+
+			<div class="empty" data-vertical="6" data-horizontal="1" data-diagonalup="1" data-diagonaldown="1"></div>
+			<div class="empty" data-vertical="6" data-horizontal="2" data-diagonalup="1" data-diagonaldown="1"></div>
+			<div class="empty" data-vertical="6" data-horizontal="3" data-diagonalup="1" data-diagonaldown="13"></div>
+			<div class="empty" data-vertical="6" data-horizontal="4" data-diagonalup="1" data-diagonaldown="12"></div>
+			<div class="empty" data-vertical="6" data-horizontal="5" data-diagonalup="1" data-diagonaldown="11"></div>
+			<div class="empty" data-vertical="6" data-horizontal="6" data-diagonalup="1" data-diagonaldown="10"></div>
+
+
+		</div>
+
+
+
+		<div id="column7" class="columns">
+
+			<div class="empty" data-vertical="7" data-horizontal="1" data-diagonalup="1" data-diagonaldown=""></div>
+			<div class="empty" data-vertical="7" data-horizontal="2" data-diagonalup="1" data-diagonaldown=""></div>
+			<div class="empty" data-vertical="7" data-horizontal="3" data-diagonalup="1" data-diagonaldown=""></div>
+			<div class="empty" data-vertical="7" data-horizontal="4" data-diagonalup="1" data-diagonaldown="13"></div>
+			<div class="empty" data-vertical="7" data-horizontal="5" data-diagonalup="1" data-diagonaldown="12"></div>
+			<div class="empty" data-vertical="7" data-horizontal="6" data-diagonalup="1" data-diagonaldown="11"></div>
+
+		</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+</body>
+</html>

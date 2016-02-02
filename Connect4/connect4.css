@@ -1,0 +1,81 @@
+
+
+body {
+
+	background-image: URL('http://cdn.bloody-disgusting.com/wp-content/uploads/2015/11/119091-rick-and-morty-rick-and-morty.jpg');
+	background-size: cover;
+	background-color: #5bc0d1;
+	}
+
+
+
+#input-container {
+	text-align: center;
+	width: 60%;
+	/*height: 15%;*/
+}
+
+#input-box1 {
+	width: 8%;
+	height: 3%;
+}
+
+#input-box2 {
+	width: 8%;
+	height: 3%;
+	border: 2px solid white;
+}
+
+
+
+#player1, #player2 {
+	display: inline-block;
+	margin-left: 10px;
+	margin-top: 20px;
+	text-align: center;
+}
+
+#player1 {
+	width: 10%; height: 10%; 
+	margin-right: 60px;
+	padding-right: 3em;
+}
+
+#player2 {
+	width: 10%; height: 10%; 
+}
+
+h3 {
+	color: white;
+	/*margin-top: 40px;*/
+}
+
+#container {
+	background-color: #5bc0d1;
+	height: 54%;
+	width:36%;
+	margin: 100px auto;
+	border: 7px solid white;
+	border-radius: 15px;
+	animation-name: birdy;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transition: background-color 15s ease-in-out;
+}
+
+@keyframes birdy {
+    0%   {background-color:#5bc0d1;}
+    25%  {background-color:#b2d235;}
+    50%  {background-color:#5bc0d1;}
+    75%  {background-color:#b2d235;}
+    100% {background-color:#5bc0d1;}
+}
+
+.board {
+	 height: 5%;
+	 width: 4%;
+	 background-color: white;
+	 border-radius:50%;
+	 display: inline-block;
+	 padding: 1em;
+}
